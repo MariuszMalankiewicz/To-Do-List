@@ -1,0 +1,48 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #a3a6ab, #adb5b7, #b9c3c2, #cad0cb, #ddddd5);
+    h1{
+        width: 260px;
+        color: rgb(16, 175, 16);
+        padding: 20px;
+    }
+    .ContenerListyDoZrobienia{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 500px;
+        max-height: 80%;
+        width: 400px;
+        max-width: 100%;
+        overflow: hidden;
+        .row{
+            display: flex;
+            width: 100%;
+            input{
+                flex-grow: 2;
+                padding: 10px;
+                border: 3px solid rgb(16, 175, 16);
+                outline: none;
+            }
+            button{
+                flex-grow: 1;
+                padding: 10px;
+                border: 3px solid rgb(255, 138, 5);
+                outline: none;
+            }
+        }
+        .przechowujeNowaCzynnosc{
+            padding: 5px;
+        }  
+    }   
+}
