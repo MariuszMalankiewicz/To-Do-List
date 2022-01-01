@@ -11,6 +11,17 @@ body{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left top, #a3a6ab, #adb5b7, #b9c3c2, #cad0cb, #ddddd5);
+    h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(15deg);
+        color: rgba($color: #ff0606, $alpha: .7);
+        text-transform: uppercase;
+    }
+    h3:nth-of-type(1){
+        top: 40%;
+    }
     h1{
         width: 260px;
         color: rgb(16, 175, 16);
@@ -20,16 +31,15 @@ body{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        height: 500px;
-        max-height: 80%;
-        width: 400px;
+        height: 80%;
+        width: 600px;
         max-width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
         .row{
             display: flex;
             width: 100%;
             input{
-                flex-grow: 2;
+                flex-grow: 3;
                 padding: 10px;
                 border: 3px solid rgb(16, 175, 16);
                 outline: none;
@@ -39,10 +49,19 @@ body{
                 padding: 10px;
                 border: 3px solid rgb(255, 138, 5);
                 outline: none;
+                cursor: pointer;
             }
         }
         .przechowujeNowaCzynnosc{
-            padding: 5px;
+            width: 100%;
+            height: auto;
+            p{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 10px;
+                border: 2px solid rgb(16, 175, 16);
+                cursor: pointer;
+            }
         }  
     }   
 }
