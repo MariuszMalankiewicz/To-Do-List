@@ -13,7 +13,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(to right bottom, #da05cc, #b833cf, #9543ce, #734cc8, #5050be);
+  background-image: linear-gradient(to right, rgba(255, 0, 242, 0.982), #1100ff);
 }
 body .wrapper-add {
   height: 80%;
@@ -23,14 +23,17 @@ body .wrapper-add {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  background-color: white;
-  border-radius: 2px;
   transform: skewX(5deg);
   box-shadow: -30px 30px 0px 0px #f8f7f7;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 body .wrapper-add h1 {
-  color: #000000;
-  text-shadow: -3px -3px 0px #e2e0e0;
+  color: #fff;
 }
 body .wrapper-add input {
   height: 40px;
@@ -62,6 +65,12 @@ body .wrapper-active-list {
   background-color: white;
   border-radius: 2px;
   box-shadow: -15px 15px 0px 0px #f8f7f7, 15px 15px 0px 0px #f8f7f7;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 body .wrapper-delete-list {
   height: 80%;
@@ -74,4 +83,10 @@ body .wrapper-delete-list {
   border-radius: 2px;
   transform: skewX(-5deg);
   box-shadow: 30px 30px 0px 0px #f8f7f7;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }/*# sourceMappingURL=style.css.map */
