@@ -11,82 +11,99 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, rgba(255, 0, 242, 0.982), #1100ff);
+  background-image: linear-gradient(to top right, #880181, #ff00ea);
 }
-body .wrapper-add {
-  height: 80%;
-  width: 80%;
-  max-width: 350px;
+body .wrapper {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
-  transform: skewX(5deg);
-  box-shadow: -30px 30px 0px 0px #f8f7f7;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-image: linear-gradient(to top right, rgba(187, 183, 183, 0.2), rgba(255, 255, 255, 0.2));
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-body .wrapper-add h1 {
-  color: #fff;
+body .wrapper h1 {
+  color: rgba(252, 215, 215, 0.801);
+  padding: 20px 0px;
 }
-body .wrapper-add input {
-  height: 40px;
-  width: 80%;
+body .wrapper input {
   text-align: center;
-  border-radius: 2px;
+  color: rgba(252, 215, 215, 0.801);
+  padding: 10px 80px;
+  margin: 10px;
+  background: transparent;
   border: none;
-  border-bottom: 3px solid #000000;
-  color: #c9c9c9;
+  border-bottom: 3px solid rgba(252, 215, 215, 0.801);
+  font-size: 1rem;
+  transition: border-bottom 0.3s linear, font-size 0.3s linear;
 }
-body .wrapper-add button {
-  height: 40px;
-  width: 80%;
+body .wrapper input::-moz-placeholder {
+  color: rgba(252, 215, 215, 0.801);
+}
+body .wrapper input:-ms-input-placeholder {
+  color: rgba(252, 215, 215, 0.801);
+}
+body .wrapper input::placeholder {
+  color: rgba(252, 215, 215, 0.801);
+}
+body .wrapper input:focus {
+  color: #fff;
+  outline: none;
+  font-size: 1.2rem;
+  border-bottom: 5px solid #fff;
+}
+body .wrapper button {
   border-radius: 2px;
   border: none;
-  background-color: #e71a1a;
-  color: white;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: -6px -6px #e2e0e0;
-}
-body .wrapper-active-list {
-  height: 80%;
-  width: 80%;
-  max-width: 350px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 2px;
-  box-shadow: -15px 15px 0px 0px #f8f7f7, 15px 15px 0px 0px #f8f7f7;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 13px 100px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(252, 215, 215, 0.801);
+  transition: border 0.3s linear, color 0.3s linear, font-size 0.3s linear;
 }
-body .wrapper-delete-list {
-  height: 80%;
-  width: 80%;
-  max-width: 350px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 2px;
-  transform: skewX(-5deg);
-  box-shadow: 30px 30px 0px 0px #f8f7f7;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+body .wrapper button:hover {
+  color: #fff;
+  border: 3px solid #fff;
+  font-size: 1.2rem;
+}
+body .wrapper h2 {
+  color: rgba(252, 215, 215, 0.801);
+  padding: 10px 20px;
+}
+body .wrapper ol {
+  color: rgba(252, 215, 215, 0.801);
+}
+body .wrapper ol li {
+  margin-bottom: 10px;
+  color: rgba(252, 215, 215, 0.801);
+  font-size: 1.1rem;
+  cursor: zoom-in;
+  transition: font-size 0.3s linear, color 0.3s linear;
+}
+body .wrapper ol li:hover {
+  color: #FFF;
+  font-size: 2rem;
+}
+body .wrapper ol li .fa-times-circle {
+  color: rgba(252, 215, 215, 0.801);
+  padding: 0 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: font-size 0.3s linear, color 0.3s linear, transform 0.3s linear;
+}
+body .wrapper ol li .fa-times-circle:hover {
+  color: #fff;
+  transform: rotate(360deg);
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
