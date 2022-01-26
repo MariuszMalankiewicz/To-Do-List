@@ -1,34 +1,45 @@
-const btnAdd = document.querySelector(".AddTask");
-const TaskName = document.querySelector('.TaskName');
-const ActivOl = document.querySelector('.active');
+const button = document.querySelector("button");
+const input = document.querySelector('input');
+const ol = document.querySelector('ol');
+let span = document.querySelector('span');
 
-btnAdd.addEventListener('click', () => {
 
-const list = [];
+let list = [];
 
-    if(TaskName.value == ''){
+function AddToArray()
+{
+    list.push(input.value);
+}
+function AddLi()
+{
+    if(input.value == ''){
         alert('Write Task');
         return;
     }else{
         li = document.createElement('li');
-        li.textContent = TaskName.value;
-        ActivOl.appendChild(li);
-        i = document.createElement('i');
-        i.className = "fas fa-times-circle";
-        li.appendChild(i);
-        TaskName.value === '';
-        
-        
-        list.push(li.value);
-        console.log(list);
+        li.textContent = input.value;
+        ol.appendChild(li);
+        input.value === '';
     }
+}
+function AddI()
+{
+    i = document.createElement('i');
+    i.className = "fas fa-times-circle";
+    li.appendChild(i);
+}
+function CounterTask(){
+    span.innerHTML = "(" + list.length + ")";
+}
 
 
-    
-
-    i.addEventListener('click', (e) => {
-        ActivOl.removeChild(li);
-        
-    })
+button.addEventListener('click', () =>{
+    AddToArray();
+    AddLi();
+    AddI();
+    CounterTask();
+    console.log(list);
 })
+
+        
 
