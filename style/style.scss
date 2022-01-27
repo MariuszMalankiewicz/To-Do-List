@@ -79,7 +79,7 @@ body{
                 margin-bottom: 10px;
                 color: $font-color;
                 font-size: 1.1rem;
-                cursor:zoom-in;
+                cursor:crosshair;
                 transition: font-size .3s linear, color .3s linear;
                 &:hover{
                     color: #FFF;
