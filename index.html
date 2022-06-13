@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="background-left"></div>
+    <i class="fa-solid fa-list"></i>
+    <i class="fa-solid fa-list-check"></i>
+    <i class="fa-solid fa-check"></i>
+    <div class="wrapper">
+        <div class="left">
+            <div class="TaskCounter">
+                <h2>Active tasks</h2>
+                <span class="counter">0</span>
+            </div>
+            <div class="AddNewTask">
+                <div>
+                    <h1>Add new task</h1>
+                    <div class="underlane"></div>
+                </div>
+                <input placeholder="Example: Learn English" class="TitleTask" type="text"><button class="btnAddTask"
+                    type="button">Add Task</button>
+            </div>
+        </div>
+        <div class="right">
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="Search" placeholder="Search something" type="text">
+            </form>
+            <h2>Task list</h2>
+            <ul>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
