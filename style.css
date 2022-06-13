@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #ebe9e9, #e7e5e6, #e2e2e2, #dedede, #dadada);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.background-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: orange;
+    z-index: -1;
+    animation: changeWidth 4s 1 linear;
+}
+@keyframes changeWidth {
+    0%{
+    width: 0vw;
+    height: 100vh;
+    }
+    24%{
+    width: 0vw;
+    height: 100vh;
+    }
+    25%{
+        width: 33vw;
+        height: 100vh;
+    }
+    49%{
+        width: 33vw;
+        height: 100vh;
+    }
+    50%{
+        width: 66vw;
+        height: 100vh;
+    }
+    74%{
+        width: 66vw;
+        height: 100vh;
+    }
+    75%{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.fa-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: first 1s 1 linear;
+    animation-delay: 1s;
+}
+
+.fa-list-check{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: first 1s 1 linear;
+    animation-delay: 2s;
+}
+.fa-check{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: first 1s 1 linear;
+    animation-delay: 3s;
+}
+
+@keyframes first {
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 6px solid black;
+    box-shadow: 3px 3px 10px 10px rgba(115, 115, 115, 0.518);
+    animation: tlo 4s 1 linear;
+}
+@keyframes tlo {
+    0%{
+        transform: translateX(100vw);
+    }
+    90%{
+        transform: translateX(100vw); 
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+
+/* LEFT SITE */
+.left{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+}
+
+.left .TaskCounter{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+.TaskCounter h2{
+    font-size: 3rem;
+}
+.TaskCounter span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 25px;
+    border: 4px solid black;
+}
+
+.left .AddNewTask{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 50%;
+    width: 100%;
+}
+
+.left h1{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.underlane{
+    height: 3px;
+    width: 100%;
+    background: orange;
+}
+.TitleTask{
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    font-weight: bold;
+    box-shadow: 1px 4px 4px 0px #cdcccc;    
+}
+.TitleTask::placeholder{
+    color: #cdcccc;
+    font-weight: lighter;
+}
+.TitleTask:focus{
+    outline: 2px solid orange;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.btnAddTask{
+    align-self: flex-start;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.btnAddTask:hover{
+    background-color: black;
+    color: orange;
+}
+/* RIGHT SITE */
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+form{
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 80%;
+    background-color: #f5f5f5;
+    font-size: 1.5rem;
+}
+.fa-magnifying-glass{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.Search{
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 80%;
+    background-color: #f5f5f5;
+}
+.Search:focus{
+    outline: none;
+}
+.right h2{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 3rem;
+}
+ul{
+    overflow-y: scroll;
+    height: 70%;
+    width: 80%;
+    padding: 10px;
+}
+ul li{
+    text-align:justify;
+    list-style-type: none;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    letter-spacing: .5px;
+    border-bottom: 3px solid black;
+}
+::-webkit-scrollbar {
+    width: 20px;
+
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: orange; 
+  }
+.fa-delete-left{
+    cursor: pointer;
+    padding-left: 5px;
+    color: orange;
+    font-size: 2.5rem;
+    transition: .5s linear;
+}
+.fa-delete-left:hover{
+    color: black;
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        overflow-y: scroll;
+    }
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orange; 
+  }
+    .left{
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;
+    }
+}
+@media (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+}
+@media (max-width: 425px){
+    .wrapper{
+        width: 100%;
+    }
+}
