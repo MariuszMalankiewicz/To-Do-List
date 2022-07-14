@@ -1,11 +1,11 @@
 const ul = document.querySelector('ul');
-const numberTask = document.querySelector('.counter');
+const numberTask = document.querySelector('.task-counter span');
 
 
 
 
 const AddTask = ()=>{
-let TitleTask = document.querySelector('.TitleTask');
+let TitleTask = document.querySelector('.AddNewTask input');
 if(TitleTask.value === ''){
     alert('Write Something :)');
     return;
@@ -43,12 +43,12 @@ const RemoveTask = ()=>{
 
 
 
-document.querySelector('.btnAddTask').addEventListener('click', ()=>{
+document.querySelector('.AddNewTask button').addEventListener('click', ()=>{
     AddTask();
     RemoveTask();
 })
 
-document.querySelector('.Search').addEventListener('input', (e)=>{
+document.querySelector('.right-site input').addEventListener('input', (e)=>{
     let LiElements = document.querySelectorAll('li');
     let searchText = e.target.value.toLowerCase();
     for (var i = 0; i < LiElements.length; i++) {
