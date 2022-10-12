@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #ebe9e9, #e7e5e6, #e2e2e2, #dedede, #dadada);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* start main animation */
+.background-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: orange;
+    z-index: -1;
+    animation: changeWidth 4s 1 linear;
+}
+@keyframes changeWidth {
+    0%{
+    width: 0vw;
+    height: 100vh;
+    }
+    24%{
+    width: 0vw;
+    height: 100vh;
+    }
+    25%{
+        width: 33vw;
+        height: 100vh;
+    }
+    49%{
+        width: 33vw;
+        height: 100vh;
+    }
+    50%{
+        width: 66vw;
+        height: 100vh;
+    }
+    74%{
+        width: 66vw;
+        height: 100vh;
+    }
+    75%{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@keyframes first {
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes tlo {
+    0%{
+        transform: translateX(100vw);
+    }
+    90%{
+        transform: translateX(100vw); 
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.fa-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: first 1s 1 linear;
+    animation-delay: 1s;
+}
+.fa-list-check{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: first 1s 1 linear;
+    animation-delay: 2s;
+}
+.fa-check{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: first 1s 1 linear;
+    animation-delay: 3s;
+}
+/* end main animation */
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    min-height: 350px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 6px solid black;
+    box-shadow: 3px 3px 10px 10px rgba(115, 115, 115, 0.518);
+    animation: tlo 4s 1 linear;
+}
+
+/* LEFT SITE */
+.left-site{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+}
+/* task-counter */
+.task-counter{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+.task-counter h2{
+    font-size: 3rem;
+}
+.task-counter span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 25px;
+    border: 4px solid black;
+}
+/* add-new-task */
+.AddNewTask{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 50%;
+    width: 100%;
+}
+.AddNewTask h1{
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.AddNewTask h1::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid orange;
+}
+.AddNewTask form{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 4px 4px 0px #cdcccc;
+}
+.AddNewTask input{
+    text-align: center;
+    height: 100%;
+    width: 70%;
+    border: 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 3px solid orange;
+    border-radius: 10px 0 0 10px;
+        
+}
+.AddNewTask input::placeholder{
+    color: #cdcccc;
+    font-weight: lighter;
+}
+.AddNewTask input:focus{
+    outline: none;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: .3s linear all;
+}
+.AddNewTask button{
+    position: absolute;
+    align-self: flex-start;
+    height: 100%;
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.AddNewTask button:hover{
+    background-color: black;
+    color: orange;
+    transition: .3s linear;
+}
+/* RIGHT SITE */
+.right-site{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* form */
+.right-site form{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+}
+.right-site form i{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: black;
+}
+.right-site form input{
+    height: 100%;
+    width: 80%;
+    border: none;
+    background-color: transparent;
+}
+.right-site form input:focus {
+    outline: none;
+}
+.right-site h2{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 3rem;
+}
+/* todo list */
+.right-site ul{
+    overflow-y: auto;
+    height: 70%;
+    width: 80%;
+    padding: 10px;
+}
+.right-site ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    list-style-type: none;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    letter-spacing: .5px;
+    border-bottom: 3px solid black;
+}
+.right-site i{
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 5px;
+    color: orange;
+}
+.right-site i:hover{
+    color: black;
+    transition: .3s linear;
+}
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.3);
+    height: 50%;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: orange; 
+  }
+@media (max-width: 1024px){
+    html{
+        font-size: 9px;
+    }
+    .wrapper{
+        width: 95%;
+    }
+}
+@media (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+    .wrapper{
+        width: 95%;
+        display: flex;
+        overflow: auto;
+    }
+    .left-site{
+        width: 100%;
+    }
+    .right-site{
+        width: 100%;
+    }
+}

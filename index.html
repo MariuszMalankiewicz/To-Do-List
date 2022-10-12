@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Todo List</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="background-left"></div>
     <i class="fa-solid fa-list"></i>
     <i class="fa-solid fa-list-check"></i>
     <i class="fa-solid fa-check"></i>
     <div class="wrapper">
-        <!-- left-site -->
-        <div class="left-site">
-            <div class="task-counter">
-                <h2>Active tasks</h2>
-                <span>0</span>
-            </div>
-            <div class="AddNewTask">
-                <div>
-                    <h1>Add new task</h1>
-                </div>
-                <form>
-                    <input placeholder="Example: Learn English" type="text">
-                    <button type="button">Add Task</button>
-                </form>
-            </div>
+      <!-- left-site -->
+      <div class="left-site">
+        <div class="task-counter">
+          <h2>Active tasks</h2>
+          <span>0</span>
         </div>
-        <!-- right-site -->
-        <div class="right-site">
-            <form>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input placeholder="Search something" type="text">
-            </form>
-            <h2>Task list</h2>
-            <ul>
-            </ul>
+        <div class="AddNewTask">
+          <div>
+            <h1>Add new task</h1>
+          </div>
+          <form>
+            <input placeholder="Example: Learn English" type="text" />
+            <button type="button">Add Task</button>
+          </form>
         </div>
+      </div>
+      <!-- right-site -->
+      <div class="right-site">
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input placeholder="Search something" type="text" />
+        </form>
+        <h2>Task list</h2>
+        <ul></ul>
+      </div>
     </div>
-    <script src="app.js"></script>
-</body>
-
+    <script src="./scripts/app.js"></script>
+  </body>
 </html>
