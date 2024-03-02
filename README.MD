@@ -1,5 +1,19 @@
 # To Do List
 
-in the project you can create a task, the program stores the task counts it, then you can delete it
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-live link: https://mariuszmalankiewicz.github.io/To-Do-List/
+## General info
+The goal of the project was learning html, css and java script. 
+	
+## Technologies
+Project is created with:
+* HTML 5
+* CSS 3
+* Java Script
+	
+## Setup
+* Clone this repo to your desktop
+* Run start file index.html
