@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-The goal of the project was learning html, css and java script. 
+Simple todo list add,delete and counter. The goal of the project was learning html, css and java script. 
 	
 ## Technologies
 Project is created with:
